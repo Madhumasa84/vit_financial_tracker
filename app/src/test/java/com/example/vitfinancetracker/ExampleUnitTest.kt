@@ -1,17 +1,27 @@
 package com.example.vitfinancetracker
 
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
-import org.junit.Assert.*
-
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun validEmail_passesValidation() {
+        assertTrue(InputValidator.isValidEmail("student@vit.ac.in"))
+    }
+
+    @Test
+    fun invalidEmail_failsValidation() {
+        assertFalse(InputValidator.isValidEmail("student.vit.ac.in"))
+    }
+
+    @Test
+    fun strongPassword_passesValidation() {
+        assertTrue(InputValidator.isStrongPassword("Abcdef@1"))
+    }
+
+    @Test
+    fun weakPassword_failsValidation() {
+        assertFalse(InputValidator.isStrongPassword("abc123"))
     }
 }

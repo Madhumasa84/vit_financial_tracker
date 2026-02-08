@@ -1,6 +1,28 @@
 <resources>
     <string name="app_name">VIT Finance Tracker</string>
     <string name="login">Login</string>
-    <string name="signup">SignUP</string>
-    <string name="signin">SignIn</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="new_user">New User?</string>
+    <string name="existing_user">Existing User?</string>
+    <string name="email_label">Email :</string>
+    <string name="email_hint">Enter your Email ID</string>
+    <string name="password_label">Password :</string>
+    <string name="password_hint">Enter your Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="invalid_email">Please enter a valid email address.</string>
+    <string name="password_required">Password is required.</string>
+    <string name="login_success">Login successful.</string>
+    <string name="signup_success">Account created successfully.</string>
+    <string name="reset_password_hint">Reset password feature will be connected to backend soon.</string>
+    <string name="weak_password_error">Password must be 8+ chars with upper, lower, number, and special symbol.</string>
+    <string name="password_strength_weak">Password strength: Weak</string>
+    <string name="password_strength_medium">Password strength: Medium</string>
+    <string name="password_strength_strong">Password strength: Strong</string>
+    <string name="dashboard">Financial Dashboard</string>
+    <string name="welcome_user">Welcome, %1$s</string>
+    <string name="budget_summary">%1$s Budget\nAllocated: ₹%2$d\nSpent: ₹%3$d\nRemaining: ₹%4$d</string>
+    <string name="insight_healthy">Great discipline! You still have healthy room in your monthly budget.</string>
+    <string name="insight_reduce_spend">Spending is close to your limit. Reduce non-essential expenses this week.</string>
+    <string name="logout">Logout</string>
 </resources>

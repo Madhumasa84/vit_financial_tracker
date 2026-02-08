@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4E2424"
-    tools:context=".Login">
+    tools:context=".Signup">
 
     <LinearLayout
         android:id="@+id/loginCard"
@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email :"
+            android:text="@string/email_label"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -34,7 +34,7 @@
             android:layout_height="50dp"
             android:layout_marginBottom="12dp"
             android:background="@android:drawable/edit_text"
-            android:hint="Enter your Email ID"
+            android:hint="@string/email_hint"
             android:padding="8dp"
             android:textColor="#000000"
             android:textColorHint="#888888" />
@@ -42,7 +42,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password :"
+            android:text="@string/password_label"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -53,22 +53,29 @@
             android:layout_height="50dp"
             android:layout_marginBottom="16dp"
             android:background="@android:drawable/edit_text"
-            android:hint="Enter your Password"
+            android:hint="@string/password_hint"
             android:inputType="textPassword"
             android:padding="8dp"
             android:textColor="#000000"
             android:textColorHint="#888888" />
 
         <Button
-            android:id="@+id/signInButton"
+            android:id="@+id/signUpButton"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="12dp"
             android:backgroundTint="#4E2424"
-            android:text="Sign Up"
+            android:text="@string/signup"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             app:iconSize="20dp" />
+
+        <TextView
+            android:id="@+id/passwordStrengthIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_strength_weak"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -78,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:text="Sign Up"
+        android:text="@string/signup"
         android:textColor="#FFFFFF"
         android:textSize="32sp"
         android:textStyle="bold"
